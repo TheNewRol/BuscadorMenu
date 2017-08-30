@@ -1,0 +1,13 @@
+/*
+http://develoteca.com/bootstrap-file-input-archivos-utilizando-html5/
+*/
+
+body {
+            color: blue;
+            background-color: #ffff99;
+            padding: 50px;
+        }
+        
+        div.inputxxx {
+            width: 500px;
+        }
