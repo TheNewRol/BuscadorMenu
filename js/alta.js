@@ -1,5 +1,17 @@
 $(document).ready(function(){
     
+    function css(){
+        /*
+            Dispositivos pequeños (tablets, anchura mayor o igual a 768px) 
+            @media (min-width: @screen-sm-min) { ... }
+        */
+        var anchoPantalla = screen.width;
+        if(anchoPantalla > 1366){
+            //$("#mapMovil")
+        }
+    }
+    
+    
     function initMap(){
         
         var myLatLng = {lat: 41.9274705, lng: 2.2448564};
@@ -20,6 +32,7 @@ $(document).ready(function(){
     }
     
     function init(){
+        css();
         initMap();
     }
     
