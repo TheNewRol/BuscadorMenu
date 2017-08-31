@@ -3,11 +3,29 @@ http://develoteca.com/bootstrap-file-input-archivos-utilizando-html5/
 */
 
 body {
-            color: blue;
-            background-color: #ffff99;
-            padding: 50px;
+    color: blue;
+    padding: 3%;
+}
+
+    .titulo{
+        text-align: center;
+        width: 100%;
+        margin: 5% 3%;
+    }
+        .custom-file-control:lang(es)::after {
+          content: "Elija su imagen...";
         }
+        .custom-file-control:lang(es)::before {
+          content: "Buscar";
+        }
+    
+    
+    #map{
+        height: 700px;
+    }
+
         
-        div.inputxxx {
-            width: 500px;
-        }
+div.inputxxx {
+    width: 500px;
+}
+
