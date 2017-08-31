@@ -7,12 +7,14 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/restaurante.css">
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?"></script>
     <script src="js/restaurante.js"></script>
 
 </head>
@@ -36,24 +38,49 @@
     <div class="container">
         <div class="container-fluid">
             <div class="row">
-                <div class="col s12 m7">
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="images/sample-1.jpg">
+                            <img src="http://www.lagastroteca.es/wp-content/uploads/2013/01/url2.jpg">
                             <span class="card-title">Card Title</span>
                         </div>
                         <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                            <h3 class="text-center">Nombre Restaurante</h3>
+                            <div class="row">
+                                <div class="col-md-5 pull-left">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-5 pull-right">
+                                    <p>Categoria: <span>Restaruante</span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti totam rem itaque tempore temporibus nemo reiciendis at id, ducimus sint accusantium doloribus, vero voluptatum dolore repellendus, ea non adipisci cum. Eius iure harum, aperiam rem laudantium ea neque dicta asperiores eligendi in voluptatem molestiae animi beatae tempora repudiandae hic modi.</p>
+                            </div>
                         </div>
                         <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+                        </div>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                            <h4>Modal Header</h4>
+                            <p>A bunch of text</p>
+                            </div>
+                            <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div id="map" class="row"></div>
+                </div>
             </div>
         </div>
-        <div class="container-fluid"></div>
     </div>
     <footer>
         
