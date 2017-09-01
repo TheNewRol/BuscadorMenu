@@ -1,10 +1,14 @@
 $( document ).ready(function(){
     function css(){
-        $(".button-collapse").sideNav();   
+        $('.modal').modal();
+        $(".button-collapse").sideNav();
     }
     
     function initMap(){
-        
+        /*
+        para realizar busquedas en un mapa de google maps
+        https://jafrancov.com/2011/12/trazar-rutas-gmaps-api-v3/
+        */
         var myLatLng = {lat: 41.9274705, lng: 2.2448564};
         var map = new google.maps.Map(document.getElementById('map'), {
             center: myLatLng,

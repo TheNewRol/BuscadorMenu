@@ -38,7 +38,7 @@
     <div class="container">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="card">
                         <div class="card-image">
                             <img src="http://www.lagastroteca.es/wp-content/uploads/2013/01/url2.jpg">
@@ -59,25 +59,52 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti totam rem itaque tempore temporibus nemo reiciendis at id, ducimus sint accusantium doloribus, vero voluptatum dolore repellendus, ea non adipisci cum. Eius iure harum, aperiam rem laudantium ea neque dicta asperiores eligendi in voluptatem molestiae animi beatae tempora repudiandae hic modi.</p>
+                                <div class="col-md-6">
+                                    <center><h1>Menus</h1></center>
+                                    <div class="menus">
+                                        <p>
+                                            lorem90
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quidem quaerat veniam ipsa, tempora, nisi commodi explicabo sapiente ratione obcaecati corporis cumque sequi labore ab aspernatur doloremque eaque nam eligendi magnam porro autem consequuntur quos nulla assumenda! Sit quaerat repudiandae ratione nobis, necessitatibus, eius odit nulla esse vero, placeat nesciunt dolor numquam dolores laborum magni. Dolorum ratione quas, laboriosam illum illo iure tempore dolore enim facilis modi, laudantium asperiores aliquam!
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <form action="http://maps.google.com/maps" get="" target="_blank">
+                                            <a class="col-sm-5 waves-effect waves-light btn modal-trigger" href="#modal1">Reserva</a>
+                                            <input name="daddr" type="hidden" value="vic">
+                                            <input class="col-sm-5 waves-effect waves-light btn " type="submit" value="Como Llegar">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="map" class="row"></div>
+                                </div>
                             </div>
+                            <div class="row">
+                                <h3>Descripcion</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Deleniti totam rem itaque tempore temporibus nemo reiciendis
+                                        at id, ducimus sint accusantium doloribus, vero 
+                                        voluptatum dolore repellendus, ea non adipisci cum. 
+                                        Eius iure harum, aperiam rem laudantium ea neque dicta 
+                                        asperiores eligendi in voluptatem molestiae animi beatae 
+                                        tempora repudiandae hic modi.
+                                    </p>
+                            </div>
+                            
                         </div>
-                        <div class="card-action">
-                            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-                        </div>
+                        
+                        <!-- Modal Structure -->
                         <div id="modal1" class="modal">
                             <div class="modal-content">
-                            <h4>Modal Header</h4>
-                            <p>A bunch of text</p>
+                                <h4>Nombre Restaurante</h4>
+                                <p>627 645 578</p>
                             </div>
                             <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div id="map" class="row"></div>
                 </div>
             </div>
         </div>
