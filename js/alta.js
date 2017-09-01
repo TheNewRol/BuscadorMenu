@@ -1,18 +1,33 @@
 $(document).ready(function(){
     
     function css(){
-        /*
-            Dispositivos pequeños (tablets, anchura mayor o igual a 768px) 
-            @media (min-width: @screen-sm-min) { ... }
-        */
-        var anchoPantalla = screen.width;
-        if(anchoPantalla > 1366){
-            //$("#mapMovil")
+        
+        if($(window).width() + 17 < 767){
+            $("#divmap div").attr("id", "");
+                $("#mapMovil div").attr("id", "map").css("height", "400px");
+                initMap();
+        }else{
+            $("#mapMovil div").attr("id", "").html("").css("height", "0px");
+            $("#divmap div").attr("id", "map");
+            initMap();
         }
+        
+        $(window).resize(function() {
+            console.log($(window).width()+17);
+            if($(window).width() + 17 < 767){
+                $("#divmap div").attr("id", "");
+                $("#mapMovil div").attr("id", "map").css("height", "400px");
+                initMap();
+            }
+            else{
+                $("#mapMovil div").attr("id", "").html("").css("height", "0px");
+                $("#divmap div").attr("id", "map");
+                initMap();
+            }
+        });
     }
     
-    
-    function initMap(){
+     function initMap(){
         
         var myLatLng = {lat: 41.9274705, lng: 2.2448564};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -33,7 +48,7 @@ $(document).ready(function(){
     
     function init(){
         css();
-        initMap();
+        //initMap();
     }
     
     init();
