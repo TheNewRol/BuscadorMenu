@@ -1,14 +1,12 @@
 body{
-    background-color: grey;
+    background-color: burlywood;
 }
 
 .card{
     margin: 8px !important;
     width: "20px"; 
 }
-.row .btn dropdown-button{
-    background-color: black;
-}
+
 .card .row a{
     margin: 0 5px;
 }
