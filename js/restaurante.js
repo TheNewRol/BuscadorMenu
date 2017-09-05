@@ -2,7 +2,10 @@ $( document ).ready(function(){
     function css(){
         $('.modal').modal();
         $(".button-collapse").sideNav();
-         $('.carousel.carousel-slider').carousel({fullWidth: true});
+         $('.carousel.carousel-slider').carousel({
+             fullWidth: true,
+             duration: 100
+         });
     }
     
     function initMap(){
