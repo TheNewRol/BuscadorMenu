@@ -8,12 +8,17 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
 
-    <!--Import materialize.css-->
+    <!--Import materialize.css--->
+       
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+       
+    
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -27,11 +32,16 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="sass.html">Inicio</a></li>
                     <li><a href="badges.html">Acceso Restaurante</a></li>
+                     <li><a href="badges.html">Registrate</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="sass.html">Inicio</a></li>
                     <li><a href="badges.html">Acceso Restaurante</a></li>
+                     <li><a href="badges.html">Registrate</a></li>
                 </ul>
+             
+             
+                 
             </div>
         </nav>
     </header>
@@ -39,11 +49,12 @@
         <div class="row">
             <h1>Menu Diario</h1>
         </div>
-        <div class="row justify-content-center">
+        <div class="row">
+
 
             <div class="col-sm-3">
-                <select class="col-sm-2 custom-select bg-success text-white" title="Ubicación" data-style="btn-primary">
-                        <option value="Mi_Ubicacion" selected>Mi hubicación</option>
+                <select class="col-sm-2 custom-select bg-success text-white" name="ubicacion" data-style="btn-primary">
+                        <option value="ninguno" selected>Mi hubicación</option>
                         <option value="Sants">Sants</option>
                         <option value="Gracia">Gracia</option>
                         <option value="Eixample">Eixample</option>
@@ -51,8 +62,8 @@
             </div>
 
             <div class="col-sm-3">
-                <select class="col-sm-2 custom-select bg-success text-white" title="Ubicación" data-style="btn-primary">
-                        <option value="Mi_Ubicacion" selected>Tipo de Local</option>
+                <select class="col-sm-2 custom-select bg-success text-white" name="tipo" data-style="btn-primary">
+                        <option value="ninguno" selected>Tipo de Local</option>
                         <option value="Bar_de_Copas">Bar de Copas</option>
                         <option value="Bar_de_Tapas">Bar de Tapas</option>
                         <option value="Restaurante">Restaurante</option>
@@ -61,22 +72,44 @@
                     </select>
             </div>
 
+
             <div class="col-sm-3">
-                <select class="col-sm-2 custom-select bg-success text-white" title="Ubicación" data-style="btn-primary">
-                        <option value="Mi_Ubicacion" selected>Precio</option>
+                <select name="precio" class="col-sm-2 custom-select bg-success text-white" data-style="btn-primary">
+                        <option value="ninguno" selected>Precio</option>
                         <option value="Economico">Economico</option>
                         <option value="Razonable">Razonable</option>
                         <option value="Caro">Caro</option>
                     </select>
             </div>
-            
-             <div class="col-sm-3">
-                <select class="col-sm-2 custom-select bg-success text-white" title="Ubicación" data-style="btn-primary">
-                        <option value="Mi_Ubicacion" selected>Platos</option>
-                        <option value="Economico">Pasta</option>
-                        <option value="Razonable">Pizza</option>
-                        <option value="Caro">Paella</option>
+
+            <div class="col-sm-3">
+
+                <div class="row">
+
+                    <select class="col-12 custom-select bg-success text-white" name="platos1" data-style="btn-primary">
+                        <option value="ninguno" selected>Platos</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="paella">Paella</option>
                     </select>
+
+
+                    <select class="col-12 custom-select bg-success text-white" name="platos2" data-style="btn-primary">
+                        <option value="ninguno" selected>Platos</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="paella">Paella</option>
+                    </select>
+
+                    <select class="col-12 custom-select bg-success text-white" name="platos3" data-style="btn-primary">
+                        <option value="ninguno" selected>Platos</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="paella">Paella</option>
+                    </select>
+
+                </div>
+
             </div>
 
             <input class="col-sm-2 btn bg-success text-white" type="submit" value="buscar">
@@ -84,11 +117,41 @@
         </div>
     </div>
 
+    <hr>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-6">
+
+                <div class="form-group">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        
+                </div>
+
+            </div>
+
+
+
+            <div class="col-sm-6">
+                <select class="col-sm-2 custom-select bg-success text-white" name="ubicacion" data-style="btn-primary">
+                        <option value="ninguno" selected>Mi hubicación</option>
+                        <option value="Sants">Sants</option>
+                        <option value="Gracia">Gracia</option>
+                        <option value="Eixample">Eixample</option>
+                    </select>
+            </div>
+
+        </div>
+        <button class="col-sm-12 btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+    </div>
+
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
