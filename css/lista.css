@@ -5,28 +5,35 @@ body{
 .nav-extended{    
 
     background-color: burlywood;
+  
 
 }
 
-.container{
-    margin-right:30px;
-    
-}
 .card{
     margin: 8px !important;
-    width: 20px;
     background-color: antiquewhite;
-    width: 25rem; 
-    height: 37rem;
+    width: 30rem; 
+    height: 27rem;
     
 }
+/*
+filatro{
+    display: inline-block;
+}
+.filtro button{
+    float: right;
+}*/
 
 .card .row a{
-    margin: 0 5px;
+    margin: 0 0 0 15px;
 }
 
 .card center{
     margin-top: 20px;
+}
+
+.card-body{
+    height: 175px;
 }
 
 #map {
@@ -34,15 +41,25 @@ body{
 }
 
 .card center img {
-    width: 220px;
-    height: 145px;
+    width: 100%;
+    height: 150px;
 }
 
-.div .row justify-content-center{
-    background-color: black;
-}
 
-.btn-primary{
+.btn btn-primary{
     width: 105px; 
     height: 35px;
 }
+
+.selects{
+    margin: 10px 0px;
+}
+
+@media (max-width: 768px) {
+    .card{
+        height: 29rem;
+    }
+    
+    
+}
+
