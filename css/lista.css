@@ -1,0 +1,48 @@
+body{
+
+    background-color: white;
+}
+.nav-extended{    
+
+    background-color: burlywood;
+
+}
+
+.container{
+    margin-right:30px;
+    
+}
+.card{
+    margin: 8px !important;
+    width: 20px;
+    background-color: antiquewhite;
+    width: 25rem; 
+    height: 37rem;
+    
+}
+
+.card .row a{
+    margin: 0 5px;
+}
+
+.card center{
+    margin-top: 20px;
+}
+
+#map {
+    height: 300px;
+}
+
+.card center img {
+    width: 220px;
+    height: 145px;
+}
+
+.div .row justify-content-center{
+    background-color: black;
+}
+
+.btn-primary{
+    width: 105px; 
+    height: 35px;
+}
