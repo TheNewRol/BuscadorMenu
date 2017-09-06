@@ -4,6 +4,8 @@ $(document).ready(function(){
     
     function css(){
         
+        $(".button-collapse").sideNav();
+        
         if($(window).width() + 17 < 767){
             $("#divmap div").attr("id", "");
                 $("#mapMovil div").attr("id", "map").css("height", "400px");
