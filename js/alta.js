@@ -1,7 +1,14 @@
 $(document).ready(function(){
     
     function css(){
+        /*
+        Inicialización del menu hamburgesa
+        */
+        $(".button-collapse").sideNav();
         
+        /*
+        Colocar mapa dependiendo de si es movil o pc
+        */
         if($(window).width() + 17 < 767){
             $("#divmap div").attr("id", "");
                 $("#mapMovil div").attr("id", "map").css("height", "400px");
@@ -11,7 +18,9 @@ $(document).ready(function(){
             $("#divmap div").attr("id", "map");
             initMap();
         }
-        
+        /*
+        Recolocar mapa en caso de modificar la anchura de la pantalla
+        */
         $(window).resize(function() {
             console.log($(window).width()+17);
             if($(window).width() + 17 < 767){
@@ -48,7 +57,6 @@ $(document).ready(function(){
     
     function init(){
         css();
-        //initMap();
     }
     
     init();
