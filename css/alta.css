@@ -1,0 +1,38 @@
+/*
+http://develoteca.com/bootstrap-file-input-archivos-utilizando-html5/
+*/
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+    .titulo{
+        text-align: center;
+        width: 90%;
+        margin: 5% 3%;
+    }
+        .custom-file-control:lang(es)::after {
+          content: "Elija su imagen...";
+        }
+        .custom-file-control:lang(es)::before {
+          content: "Buscar";
+        }
+    
+    
+    #map{
+        height: 700px;
+    }
+
+        
+.alta .form-control {
+    width: 100% !important;
+    height: auto !important;
+    padding: .5rem .75rem !important;
+    font-size: 1rem !important;
+    border: 1px solid rgba(0,0,0,.15) !important;
+    border-radius: .25rem !important;
+    -webkit-box-sizing: inherit !important;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
+}
+

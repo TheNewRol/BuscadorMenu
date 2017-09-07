@@ -1,0 +1,15 @@
+.login{
+    padding: 17px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn-enviar{
+    /*background-color: green;*/
+}
+
+ @media (min-width: 992px) {
+    .login{
+        width: 30%;
+     }
+}
