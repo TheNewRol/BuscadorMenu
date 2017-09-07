@@ -1,17 +1,4 @@
 
-
-body{
-
-    background-color: antiquewhite!important;
-}
-
-
-.btn-primary {
-    color: #fff;
-    background-color: #2b5980;
-    border-color: #285277;
-}
-
 div.container-fluid {
     height=50%;
 }
@@ -38,14 +25,14 @@ h1 {
 }
 
 
-body {
+/*body {
   font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
   color: #fff;
   padding: 50px;
   width: 300px;
   margin: 0 auto;
   background-color: #374954;
-}
+}*/
 
 .dropdown {
   position: absolute;
