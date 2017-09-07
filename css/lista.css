@@ -1,10 +1,10 @@
 body{
 
-    background-color: white !important;
+    background-color: antiquewhite!important;
 }
 .nav-extended{    
 
-    background-color: burlywood !important;
+    background-color: brown!important;
   
 
 }
@@ -13,7 +13,7 @@ body{
 .card {
     margin: 10px !important;
     padding: 0 15px 0 16px !important;
-    background-color: antiquewhite;
+    background-color: #f3c991;
     width: 307px !important;
     height: 275px;
 }
@@ -90,4 +90,7 @@ filatro{
     border-color: #285277;
 }
 
-
+.buscar{
+    background-color: #2b5980;
+    border-color: #285277;
+}
