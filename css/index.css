@@ -1,3 +1,16 @@
+
+body{
+
+    background-color: antiquewhite!important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2b5980;
+    border-color: #285277;
+}
+
+
 div.container-fluid {
     height=50%;
 }
@@ -22,6 +35,8 @@ h1 {
     }
     
 }
+
+
 
 
 
