@@ -1,0 +1,19 @@
+/*
+#0d1f22
+*/
+
+nav{
+    background-color: #0D1F22;
+}
+
+#map{
+    height: 400px;
+    padding: 15px;
+}
+
+.menus {
+    height: 300px;
+}
+.modal{
+    max-height: 27%;
+}

@@ -1,0 +1,12 @@
+body{
+    background-color: antiquewhite!important;
+}
+    nav{    
+
+        background-color: brown!important;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #2b5980;
+        border-color: #285277;
+    }
