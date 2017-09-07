@@ -1,21 +1,23 @@
 body{
 
-    background-color: white;
+    background-color: white !important;
 }
 .nav-extended{    
 
-    background-color: burlywood;
+    background-color: burlywood !important;
   
 
 }
 
-.card{
-    margin: 8px !important;
+
+.card {
+    margin: 10px !important;
+    padding: 0 15px 0 16px !important;
     background-color: antiquewhite;
-    width: 30rem !important; 
-    height: 25rem ;
-    
+    width: 307px !important;
+    height: 275px;
 }
+
 /*
 filatro{
     display: inline-block;
@@ -25,44 +27,41 @@ filatro{
 }*/
 
 .card .row a{
-    margin: 0 0 0 15px;
+    margin: 0 10px 0 20px!important;
 }
 
 .card center{
     margin-top: 20px;
-    font-family: cursive;
+    font-family: cursive!important;
 }
 
 .card-body{
-    height: 175px;
+    height: 175px!important;
 }
 
 #map {
-    height: 300px;
+    height: 300px!important;
 }
 
 .card center img {
-    width: 100%;
-    height: 150px;
+    width: 100%!important;
+    height: 150px!important;
 }
 
 
-.btn btn-primary{
-    width: 105px; 
-    height: 35px;
-}
+
 
 .selects{
-    margin: 10px 0px;
+    margin: 10px 0px!important;
 }
 
 @media (max-width: 768px) {
     .card{
-        height: 29rem;
+        height: 29rem!important;
     }
     
     .card .row a {
-    margin: 2px 5px 2px 5px;
+    margin: 2px 5px 2px 5px!important;
 }
     
 }
@@ -70,9 +69,25 @@ filatro{
 @media only screen and (min-width: 600px){
     
     .card{
-        height: 27rem;
+        height: 27rem!important;
     }
     
     .card .row a {
-    margin: 2px 5px 2px 5px;
-} 
+    margin: 2px 5px 2px 5px!important;
+    } 
+}
+    
+.card .card-title {
+    font-size: 25px!important;
+    font-weight: 500!important;
+}
+    
+    
+
+.btn-primary {
+    color: #fff;
+    background-color: #2b5980;
+    border-color: #285277;
+}
+
+
