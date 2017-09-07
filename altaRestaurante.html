@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/alta.css">
-<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/alta.css">
+    
+    
 </head>
 
 <body>
@@ -30,11 +34,11 @@
         </nav>
     </header>
     <div class="container-fluid">
-        <div>
+        <div class="row">
             <h1 class="titulo">Alta de su restaurante</h1>
         </div>
         <div class="row">
-            <form class="col-md-6" action="">
+            <form class="col-md-6 alta" action="">
 
                 <div class="row">
                     <div class="col">
@@ -47,17 +51,24 @@
                             <label for="exampleFormControlInput1"><strong>Tel&eacute;fono</strong></label>
                             <input name="cognoms" type="Apellidos" class="form-control" id="exampleFormControlInput1" placeholder="Tel&eacute;fono">
                         </div>
-                        <div class="form-group">
-                            <label for="provincia"><strong>Provincia</strong></label>
-                            <input name="adr" type="Ubicaci&oacute;n" class="form-control" id="provincia" placeholder="Provincia">
+                       <div class="form-group">
+                            <label><strong>Provincia</strong></label>
+                            <input type="text" class="form-control" id="provincia" placeholder="Provincia">
                         </div>
                         <div class="form-group">
-                            <label for="poblacion"><strong>Poblaci&oacute;n</strong></label>
-                            <input name="adr" type="Poblaci&oacute;n" class="form-control" id="poblacion" placeholder="Poblaci&oacute;n">
+                            <label><strong>Poblaci&oacute;n</strong></label>
+                            <input type="text" class="form-control" id="poblacion" placeholder="Poblaci&oacute;n">
                         </div>
-                        <div class="form-group">
-                            <label for="ubicacion"><strong>Ubicaci&oacute;n</strong></label>
-                            <input name="adr" type="Ubicaci&oacute;n" class="form-control" id="ubicacion" placeholder="Ubicaci&oacute;n">
+                        <div class="row form-group">
+                                <div class="col-sm-9">
+                                    <label for="calle"><strong>Calle</strong></label>
+                                    <input type="text" class="form-control" id="calle" placeholder="Ubicaci&oacute;n">
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="numero"><strong>Nº</strong></label>
+                                    <input type="number" class="form-control" id="numero" placeholder="Ubicaci&oacute;n">
+                                </div>
+                                
                         </div>
                         <div id="mapMovil">
                             <div></div>
@@ -90,20 +101,20 @@
                             </select>
                         </div>
                         <div class="form-group">
-                        <label for="exampleFormControlInput1"><strong>Imagen</strong></label>
-                    </div>
+                            <label for="exampleFormControlInput1"><strong>Imagen</strong></label>
+                        </div>
                         <div class="form-group">
-                        <label class="custom-file">
-                            <input type="file" id="file2" class="custom-file-input">
-                            <span class="custom-file-control"></span>
-                        </label>
-                    </div>
+                            <label class="custom-file">
+                                <input type="file" id="file2" class="custom-file-input">
+                                <span class="custom-file-control"></span>
+                            </label>
+                        </div>
                         <div class="form-group">
-                    <label for="exampleFormControlInput1"><strong>Descripci&oacute;n</strong></label>
-                    <div>
-                        <textarea class="box-form col-sm-12" type="text" name="mensaje"></textarea>
-                    </div>
-                </div>
+                            <label for="exampleFormControlInput1"><strong>Descripci&oacute;n</strong></label>
+                            <div>
+                                <textarea class="box-form col-sm-12" type="text" name="mensaje"></textarea>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <br>

@@ -41,25 +41,18 @@ $(document).ready(function(){
             zoom: 17
         });
          
-         marker = new google.maps.Marker({});
-        //Creamos el marcador del mapa
-        /*marker = new google.maps.Marker({
-            draggable: true,
-            position: myLatLng,
-            map: map,
-            animation: google.maps.Animation.DROP,
-            title: 'Nou Pamplona'
-        });
-        //aÃ±adiendo el marker al mapa
-        marker.setMap(map);*/
-         
-        $("#provincia").bind("change paste keyup", obtenerDatos); 
+        //$("#provincia", "#poblacion").bind("change paste keyup", obtenerDatos); 
+        $("#provincia").bind("change paste keyup", obtenerDatos);
         $("#poblacion").bind("change paste keyup", obtenerDatos);
+        $("#calle").bind("change paste keyup", obtenerDatos);
+        $("#numero").bind("change paste keyup", obtenerDatos);
     }
     
     function obtenerDatos(){
         var provincia = $("#provincia").val();
         var poblacion = $("#poblacion").val();
+        var calle = $("#calle").val();
+        var numero = $("#numero").val();
         
         if(provincia == undefined){
             provincia = "";
@@ -67,8 +60,14 @@ $(document).ready(function(){
         if(poblacion == undefined){
             poblacion = "";
         }
+        if(calle == undefined){
+            calle = "";
+        }
+        if(numero == undefined){
+            numero = "";
+        }
         
-        var address = provincia + ", " + poblacion;
+        var address = calle + ", " + numero + "," + poblacion + ", " + provincia;
         
         console.log(address);
         
@@ -77,15 +76,19 @@ $(document).ready(function(){
     
     function codeAddress(address) {
         geocoder.geocode({ 'address': address }, function(results, status) {
-          if (status === google.maps.GeocoderStatus.OK) {
+        if (status === google.maps.GeocoderStatus.OK) {
+            if(marker != undefined && marker != ""){
+                marker.setMap(null);
+                marker = "";
+            }
             map.setCenter(results[0].geometry.location);
-            marker.set
-            /*marker = new google.maps.Marker({
-                draggable: true,
+            marker = new google.maps.Marker({
+                draggable: false,
                 map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Nou Pamplona',
                 position: results[0].geometry.location
-            });*/
-            marker.addListener('click', toggleBounce);
+            });
           } else {
             //console.log("Geocode unsuccessful");
           }
@@ -99,6 +102,25 @@ $(document).ready(function(){
           marker.setAnimation(google.maps.Animation.BOUNCE);
         }
     }
+    
+    function geocoderReverse(){
+        console.log("reverse");
+        geocoder.geocode({'location': marker.getPosition()}, function(results, status) {
+            if (status === 'OK') {
+                if (results[1]) {
+                    result = {};
+                    for (var i = 0; i < results[1].address_components.length; i++) {
+                        ac = results[1].address_components[i];
+                        result[ac.types[0]] = ac.long_name;
+                    }
+                    
+                    $("#ubicacion").val(results[1].formatted_address);
+                    console.log(result.route);
+                }
+            }
+        });
+    }
+    
     
     function init(){
         css();
