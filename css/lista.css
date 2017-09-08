@@ -1,5 +1,6 @@
 
 .card {
+    
     margin: 10px !important;
     padding: 0 15px 0 16px !important;
     background-color: #f3c991;
@@ -50,7 +51,7 @@
     } 
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .card{
         height: 29rem!important;
     }
@@ -59,5 +60,9 @@
         margin: 2px 5px 2px 5px!important;
     }
     
+}
+
+.btn btn-outline-success my-2 my-sm-0{
+    background-color: #2b5980;
 }
 
