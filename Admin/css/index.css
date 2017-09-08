@@ -2,11 +2,11 @@
 #0d1f22
 */
 
-nav{
+nav {
     background-color: #0D1F22;
 }
 
-#map{
+#map {
     height: 400px;
     padding: 15px;
 }
@@ -14,6 +14,15 @@ nav{
 .menus {
     height: 300px;
 }
-.modal{
+
+.modal {
     max-height: 27%;
+}
+
+.custom-file-control:lang(es)::after {
+    content: "Elija su imagen...";
+}
+
+.custom-file-control:lang(es)::before {
+    content: "Buscar";
 }
