@@ -50,62 +50,33 @@
                 <br>
                 <div class="selects col-md-12">
                     <select class="form-control chosen" data-placeholder="Choose an option please">                 
-                    <option value="" >Todas las regiones</option>
-                    <option value="">- selecciona -</option>
-                    <option value="">A coru&#241;a</option>
-                    <option value="">&#193;lava</option>
-                    <option value="">Albacete</option>
-                    <option value="">Alicante</option>
-                    <option value="">Almer&#237;a</option>
-                    <option value="">Asturias</option>
-                    <option value="">&#193;vila</option>
-                    <option value="">Badajoz</option>
-                    <option value="">Baleares</option>
-                    <option value="">Barcelona</option>
-                    <option value="">Burgos</option>
-                    <option value="">C&#225;ceres</option>
-                    <option value="">C&#225;diz</option>
-                    <option value="">Cantabria</option>
-                    <option value="">Castell&#243;n</option>
-                    <option value="">Ceuta</option>
-                    <option value="">Ciudad Real</option>
-                    <option value="">C&#243;rdoba</option>
-                    <option value="">Cuenca</option>
-                    <option value="">Extranjero</option>
-                    <option value="">Girona</option>
-                    <option value="">Granada</option>
-                    <option value="">Guadalajara</option>
-                    <option value="">Guip&#250;zcoa</option>
-                    <option value="">Huelva</option>
-                    <option value="">Huesca</option>
-                    <option value="">Ja&#233;n</option>
-                    <option value="">La rioja</option>
-                    <option value="">Las palmas</option>
-                    <option value="">Le&#243;n</option>
-                    <option value="">Lleida</option>
-                    <option value="">Lugo</option>
-                    <option value="">Madrid</option>
-                    <option value="">M&#225;laga</option>
-                    <option value="">Melilla</option>
-                    <option value="">Murcia</option>
-                    <option value="">Navarra</option>
-                    <option value="">Ourense</option>
-                    <option value="">Palencia</option>
-                    <option value="">Pontevedra</option>
-                    <option value="">Salamanca</option>
-                    <option value="">Santa cruz de tenerife</option>
-                    <option value="">Segovia</option>
-                    <option value="">Sevilla</option>
-                    <option value="">Soria</option>
-                    <option value="">Tarragona</option>
-                    <option value="">Teruel</option>
-                    <option value="">Toledo</option>
-                    <option value="">Valencia</option>
-                    <option value="">Valladolid</option>
-                    <option value="">Vizcaya</option>
-                    <option value="">Zamora</option>
-                    <option value="">Zaragoza</option>                  
-                </select>
+                        <option value="" >Todas las Provincias</option>
+                        <option value="">- selecciona -</option>                    
+                        <option value="">Barcelona</option>                    
+                        <option value="">Girona</option>                    
+                        <option value="">Lleida</option>                    
+                        <option value="">Tarragona</option>
+                        <option value="">Mallorca</option>
+                    </select>
+                </div>
+                
+                <div class="selects col-md-12">
+                    <select class="form-control chosen" data-placeholder="Choose an option please">
+                        <option value="Todas las provincias">Poblaciones</option>
+                        <option value="selecciona">- selecciona -</option>
+                        <option value="Abrera">Sabadell</option> 	
+                        <option value="Aguilar de Segarra">Vic</option>	
+                        <option value="Aiguafreda">Hospitalet de Llobregat</option>	
+                        <option value="Alella">Alella</option>	
+                        <option value="Alpens">Alpens</option>	
+                        <option value="Arenys de Mar">Arenys de Mar</option>	
+                        <option value="Argentona">Argentona</option>	
+                        <option value="Badalona">Badalona</option>	
+                        <option value="Badia del Vallès">Badia del Vallès</option>	
+                        <option value="Bagà">Gavà</option>	
+                        <option value="Balenyà">Calders</option>	
+                        <option value="Balsareny">Balsareny</option>	
+                    </select>
                 </div>
 
                 <div class="selects col-md-12">
@@ -140,28 +111,22 @@
                 
                 <div class="selects col-md-12">
                     <section class="demo">
-                            <select id="select-state" name="state[]" multiple class="demo-default" placeholder="Platos...">
-                                <option value="">Platos...</option>
-                                <option value="Pizza">Pizza</option>
-                                <option value="Arroz">Arroz</option>
-                                <option value="Pollo">Pollo</option>
-                                <option value="Paella">Paella</option>
-                                <option value="Lomo">Lomo</option>
-                                <option value="Postre">Postre</option>
-                                <option value="Ensalada">Ensalada</option>
-                                <option value="Pescado">Pescado</option>
-                                
-                            </select>
-                        <script class="show">
-                        $('#select-state').selectize({
-                            maxItems: 4
-                        });
-                        </script>
+                        <select id="select-state" name="state[]" multiple class="demo-default" placeholder="Platos...">
+                            <option value="">Platos...</option>
+                            <option value="Pizza">Pizza</option>
+                            <option value="Arroz">Arroz</option>
+                            <option value="Pollo">Pollo</option>
+                            <option value="Paella">Paella</option>
+                            <option value="Lomo">Lomo</option>
+                            <option value="Postre">Postre</option>
+                            <option value="Ensalada">Ensalada</option>
+                            <option value="Pescado">Pescado</option>                                
+                        </select>
                     </section>
                 </div>
 
                 <div class="selects col-md-12">
-                    <button class="btn btn-primary col-sm-6 waves-effect waves-light btn modal-trigger">Buscar</button>
+                    <button class=" btn btn-outline-success my-2 my-sm-0">Buscar</button>
                 </div>
             </div>
             
@@ -293,7 +258,7 @@
     <script>
         $(function() {
            $('#select-state').selectize({
-                maxItems: 3
+                maxItems: 5
             });
         });
 
